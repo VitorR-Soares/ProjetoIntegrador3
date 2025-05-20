@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Home</title>
+    <link rel="stylesheet" href="../css/style_barra_nav.css">
+    <link rel="stylesheet" href="../css/style_gestao_vendas.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+          <img src="../src/imgs/logo.png" alt="Logo" class="logo" />
+          <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="estoque.html">Controle de Estoque</a></li>
+            <li><a href="gestao_vendas.html">Gestão de Vendas</a></li>
+            <li><a href="gestao_encomendas.html">Gestão Encomendas</a></li>
+            <li><a href="gestao_cadastros.html">Cadastros</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="gestao_compras.html">Gestão de Compras</a></li>
+            <li><a href="gestao_caixa.html">Fluxo de Caixa</a></li>
+          </ul>
+          <button id="btn_logoff">Sair da sessão</button>
+        </nav>
+    
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    
+        <main class="content">
+            <div class="top-bar">   
+                <label for="input-date">Digite a data que deseja filtrar</label>             
+                <input type="date" class="input-text" />
+                <input type="submit" class="btn" title="Filtrar">
+            </div>
+          
+            <div class="table-container">
+              <table class="sell-table">
+                <thead>
+                  <tr>
+                    <th>ID da venda</th>
+                    <th>Valor Total</th>
+                    <th>Valor Final</th>
+                    <th>Data</th>
+                    <th>Cliente</th>
+                    <th>Usuário</th>
+                    <th>Pagamento</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Linhas da tabela serão inseridas dinamicamente -->
+                </tbody>
+              </table>
+            </div>
+          
+            <div class="bottom-buttons">
+              <button class="btn">Analisar Venda</button>
+              <a href="cadastro_venda.html" class="btn">Cadastrar Venda</a>
+            </div>
+        </main>
+    </div>
+    
+
+    <script src="../js/script_geral.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Home</title>
+    <link rel="stylesheet" href="../css/style_barra_nav.css">
+    <link rel="stylesheet" href="../css/style_cadastro_venda.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+          <img src="../src/imgs/logo.png" alt="Logo" class="logo" />
+          <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="estoque.html">Controle de Estoque</a></li>
+            <li><a href="gestao_vendas.html">Gestão de Vendas</a></li>
+            <li><a href="gestao_encomendas.html">Gestão Encomendas</a></li>
+            <li><a href="gestao_cadastros.html">Cadastros</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="gestao_compras.html">Gestão de Compras</a></li>
+            <li><a href="gestao_caixa.html">Fluxo de Caixa</a></li>
+          </ul>
+          <button id="btn_logoff">Sair da sessão</button>
+        </nav>
+    
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    
+        <main class="content">
+            <form class="sell-form">
+                <div class="row-form">
+                  <div class="field">
+                    <label>Produto:</label>
+                    <select>
+                      <option disabled selected>Selecione o produto...</option>
+                    </select>
+                  </div>
+            
+                  <div class="field">
+                    <label>Quantidade:</label>
+                    <input type="text" placeholder="Selecione a quantidade..." />
+                  </div>
+                </div>
+            
+                <div class="row-form botoes-superiores">
+                  <button type="button" class="btn">Adicionar ao Carrinho</button>
+                  <button type="button" class="btn">Visualizar Carrinho</button>
+                </div>
+            
+                <div class="row-form">
+                    <div class="field">
+                        <label>Data:</label>
+                        <input type="date" />
+                    </div>                
+                
+                    <div class="field">
+                        <label>Cliente:</label>
+                        <select>
+                        <option disabled selected>Selecione o cliente...</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="row-form">
+                  <div class="field">
+                    <label>Usuário:</label>
+                    <select>
+                      <option disabled selected>Selecione o usuário...</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row-form">
+                  <div class="field">
+                    <label>Forma de Pagamento:</label>
+                    <select>
+                      <option disabled selected>Selecione a forma de pagamento...</option>
+                    </select>
+                  </div>
+                </div>
+            
+                <div class="row-form">
+                  <div class="field desconto">
+                    <label>Desconto (em %)</label>
+                    <input type="text" placeholder="%" />
+                  </div>
+                  <button type="button" class="btn aplicar-btn">Aplicar desconto</button>
+                </div>
+            
+                <div class="resumo-venda">
+                  <p><strong>Total de Itens:</strong> <span id="total-itens" class="resumo"></span></p>
+                  <p><strong>Valor Total:</strong> <span id="valor-total" class="resumo"></span></p>
+                  <p><strong>Total em Descontos:</strong> <span id="total-descontos" class="resumo"></span></p>
+                  <hr />
+                  <p><strong>Valor Final:</strong> <span id="valor-final" class="resumo"></span></p>
+                </div>
+            
+                <div class="finalizar">
+                  <button type="submit" class="btn finalizar-btn">Finalizar Venda</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    
+
+    <script src="../js/script_geral.js"></script>
+</body>
+</html>

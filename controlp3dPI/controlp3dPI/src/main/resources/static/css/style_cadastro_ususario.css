@@ -1,0 +1,92 @@
+.content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .row-form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select {
+    padding: 0.5rem;
+    background-color: #e4e4e4;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    background-color: #999f94;
+    color: #000;
+    border: 1px solid #00000040;
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #7e847a;
+  }
+  
+  .botoes-superiores {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .desconto {
+    flex: 1;
+  }
+  
+  .aplicar-btn {
+    margin-left: auto;
+  }
+  
+  .resumo-venda {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .resumo-venda hr {
+    margin: 1rem 0;
+    border-top: 1px solid #000;
+  }
+  
+  .resumo {
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+  
+  .finalizar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  

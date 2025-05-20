@@ -1,0 +1,45 @@
+/* Conteúdo da página de cadastros */
+.cadastro-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+    
+  .cadastro-opcoes {    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .btn-cadastro {
+    display: block;
+    background-color: #949b91;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-cadastro:hover {
+    background-color: #b1b7ad;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .cadastro-container {
+      align-items: center;
+      width: 100vw;
+    }
+
+  }
+  

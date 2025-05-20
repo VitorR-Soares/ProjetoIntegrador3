@@ -1,0 +1,116 @@
+.content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  .resumo-caixa {
+    text-align: left;
+  }
+  
+  .em-caixa-label {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .valor-caixa {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .saldo-dia {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .positivo {
+    color: limegreen;
+    font-weight: bold;
+  }
+  
+  .negativo {
+    color: red;
+    font-weight: bold;
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+  }
+  
+  .movimentacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .movimentacao {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .icone {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .verde {
+    background-color: limegreen;
+  }
+  
+  .vermelho {
+    background-color: red;
+  }
+  
+  .descricao {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .ver-extrato {
+    margin-top: 2rem;
+  }
+  
+  .ver-extrato a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .ver-extrato a:hover {
+    color: #555;
+  }
+  
+  @media (max-width: 600px) {
+    .valor-caixa {
+      font-size: 2.2rem;
+    }
+  
+    .icone {
+      width: 30px;
+      height: 30px;
+      font-size: 1.2rem;
+    }
+  
+    .descricao {
+      font-size: 1rem;
+    }
+  
+    .ver-extrato a {
+      font-size: 1rem;
+    }
+  }
+  

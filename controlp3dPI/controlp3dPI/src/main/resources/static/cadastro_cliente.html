@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Home</title>
+    <link rel="stylesheet" href="../css/style_barra_nav.css">
+    <link rel="stylesheet" href="../css/style_cadastro_cliente.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+          <img src="../src/imgs/logo.png" alt="Logo" class="logo" />
+          <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="estoque.html">Controle de Estoque</a></li>
+            <li><a href="gestao_vendas.html">Gestão de Vendas</a></li>
+            <li><a href="gestao_encomendas.html">Gestão Encomendas</a></li>
+            <li><a href="gestao_cadastros.html">Cadastros</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="gestao_compras.html">Gestão de Compras</a></li>
+            <li><a href="gestao_caixa.html">Fluxo de Caixa</a></li>
+          </ul>
+          <button id="btn_logoff">Sair da sessão</button>
+        </nav>
+    
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    
+        <main class="content">
+            <form class="client-form">
+                <div class="row-form">
+
+                    <div class="field">
+                        <label>Nome:</label>
+                        <input type="text" placeholder="Informe o nome completo do cliente..." />
+                    </div>
+
+                </div>
+            
+                <div class="row-form">
+
+                    <div class="field">
+                        <label>CPF:</label>
+                        <input type="text" placeholder="Informe o CPF do cliente..." />
+                    </div>             
+                
+                </div>
+            
+                <div class="row-form">
+
+                    <div class="field">
+                        <label>Telefone:</label>
+                        <input type="text" placeholder="Informe o telefone do cliente..." />
+                    </div>             
+                
+                </div>
+                
+                <div class="row-form">
+
+                    <div class="field">
+                        <label>Idade:</label>
+                        <input type="text" placeholder="Informe a idade do cliente..." />
+                    </div>             
+                
+                </div>
+
+                <div class="row-form">
+                    <div class="field">
+                      <label>Gênero:</label>
+                        <label for="genero_m"><input type="radio" name="genero" />Masculino</label>
+                        <label for="genero_f"><input type="radio" name="genero" />Feminino</label>
+                    </div>
+                  </div>
+            
+                <div class="finalizar">
+                  <button type="submit" class="btn finalizar-btn">Cadastrar cliente</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    
+
+    <script src="../js/script_geral.js"></script>
+</body>
+</html>
