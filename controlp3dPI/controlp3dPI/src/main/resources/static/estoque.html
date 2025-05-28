@@ -27,21 +27,28 @@
         <button class="menu-toggle" id="menuToggle">☰</button>
     
         <main class="content">
-            <div class="top-bar">                
-                  <input type="text" placeholder="Digite o produto que deseja" class="input-text" />
-                  <select class="select">
-                    <option disabled selected>Selecione uma categoria</option>
-                    <option>Star Wars</option>
-                    <option>Marvel</option>
-                    <option>Disney</option>
-                  </select>
-                  <form class="add-product-form"></form>
+            <div class="top-bar">   
+                <form id="form_pesquisa_nome">
+                    <input type="text" placeholder="Digite o produto que deseja" class="input-text" />
+                    <button type="submit" class="btn">Pesquisar</button>
+                </form>
+                <form id="form_pesquisa_categoria">
                     <select class="select">
+                        <option disabled selected>Selecione uma categoria</option>
+                        
+                    </select>
+                    <button type="submit" class="btn">Pesquisar</button>
+                </form>
+                  
+                  
+                <form id="add-product-form" class="add-product-form">
+                    <select id="select_produtos" class="select">
                         <option disabled selected>Selecione um produto...</option>
                     </select>
-                    <input type="text" placeholder="Digite a quantidade" class="input-text quantity" />
+                    <input id="input_qtd" type="text" placeholder="Digite a quantidade" class="input-text quantity" />
                     <button type="submit" class="btn add-btn">+</button>
                 </form>
+                <button title="Exibir Todos" id="btn_exibir_todos" class="btn">*</button>
             </div>
             
             <div class="table-container">
@@ -51,6 +58,7 @@
                       <th>Nome</th>
                       <th>Valor Unitário</th>
                       <th>Coleção</th>
+                      <th>Quantidade</th>
                       <th>Alterações</th>
                     </tr>
                   </thead>
@@ -59,15 +67,14 @@
                   </tbody>
                 </table>
             </div>
-            
-            <div class="bottom-buttons">
-                <button class="btn">Atualizar Estoque</button>
-                <button class="btn">Remover Produto</button>
-            </div>
         </main>
     </div>
     
-
+    
     <script src="../js/script_geral.js"></script>
+    <script src="../js/script_estoque.js" defer></script>
+
+    
 </body>
+
 </html>

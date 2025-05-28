@@ -21,7 +21,7 @@ public class Produto {
     @Column(name= "id_produto")
     private Integer id;
     @Column(name= "s_nome_produto")
-    private String nome_produto;
+    private String nome;
     @Column(name= "dbl_valor_unit")
     private double valor_unit;
     @Column(name= "int_qtd")
@@ -37,15 +37,23 @@ public class Produto {
 
     public Produto(Integer id, String nome_produto, double valor_unit, int qtd, int horas_impressao, Categoria categoria) {
         this.id = id;
-        this.nome_produto = nome_produto;
+        this.nome = nome_produto;
         this.valor_unit = valor_unit;
         this.qtd = qtd;
         this.horas_impressao = horas_impressao;
         this.categoria = categoria;
     }
 
+    public Produto(Integer id, String nome, double valor_unit, int qtd, int horas_impressao) {
+        this.id = id;
+        this.nome = nome;
+        this.valor_unit = valor_unit;
+        this.qtd = qtd;
+        this.horas_impressao = horas_impressao;
+    }
+
     public Produto(String nome_produto, double valor_unit, int qtd, int horas_impressao, Categoria categoria) {
-        this.nome_produto = nome_produto;
+        this.nome = nome_produto;
         this.valor_unit = valor_unit;
         this.qtd = qtd;
         this.horas_impressao = horas_impressao;
@@ -61,11 +69,11 @@ public class Produto {
     }
 
     public String getNome_produto() {
-        return nome_produto;
+        return nome;
     }
 
     public void setNome_produto(String nome_produto) {
-        this.nome_produto = nome_produto;
+        this.nome = nome_produto;
     }
 
     public double getValor_unit() {

@@ -4,6 +4,7 @@
  */
 package com.senac.controlp3dPI.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,24 +23,21 @@ public class Categoria {
     private Integer id;
     @Column(name= "s_nome")
     private String nome_categoria;
-    @Column(name= "int_qtd_produtos")
-    private int qtd_produtos;
     @OneToMany(mappedBy = "categoria")
+    @JsonIgnore
     private List<Produto> produtos;
 
     public Categoria() {
     }
     
-    public Categoria(Integer id, String nome_categoria, int qtd_produtos, List<Produto> produtos) {
+    public Categoria(Integer id, String nome_categoria,List<Produto> produtos) {
         this.id = id;
         this.nome_categoria = nome_categoria;
-        this.qtd_produtos = qtd_produtos;
         this.produtos = produtos;
     }
 
-    public Categoria(String nome_categoria, int qtd_produtos, List<Produto> produtos) {
+    public Categoria(String nome_categoria, List<Produto> produtos) {
         this.nome_categoria = nome_categoria;
-        this.qtd_produtos = qtd_produtos;
         this.produtos = produtos;
     }
 
@@ -57,14 +55,6 @@ public class Categoria {
 
     public void setNome_categoria(String nome_categoria) {
         this.nome_categoria = nome_categoria;
-    }
-
-    public int getQtd_produtos() {
-        return qtd_produtos;
-    }
-
-    public void setQtd_produtos(int qtd_produtos) {
-        this.qtd_produtos = qtd_produtos;
     }
 
     public List<Produto> getProdutos() {
