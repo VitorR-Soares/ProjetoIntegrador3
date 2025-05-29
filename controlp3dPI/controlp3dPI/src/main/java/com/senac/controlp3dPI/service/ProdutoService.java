@@ -40,11 +40,7 @@ public class ProdutoService {
     }
     
     @Transactional
-    public Produto salvarProduto(Produto produto, int idCategoria){
-        
-        Categoria caregoriaEscolhida = categoriaService.pesquisaCategoria(idCategoria);
-        
-        produto.setCategoria(caregoriaEscolhida);
+    public Produto salvarProduto(Produto produto){
         
         Produto produtoSalvo = repository.save(produto);
         

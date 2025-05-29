@@ -4,6 +4,7 @@
  */
 package com.senac.controlp3dPI.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,6 +28,7 @@ public class Cargo {
     @Column(name= "int_nivel_acesso")
     private int nivel_acesso;
     @OneToMany(mappedBy = "cargo")
+    @JsonIgnore
     private List<Usuario> usuarios;
 
     public Cargo() {

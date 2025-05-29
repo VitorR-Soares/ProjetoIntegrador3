@@ -12,7 +12,7 @@
         <nav class="sidebar" id="sidebar">
           <img src="../src/imgs/logo.png" alt="Logo" class="logo" />
           <ul class="menu">
-            <li><a href="home.html">Home</a></li>
+              <li><a id="btn_aba_home" href="home.html">Home</a></li>
             <li><a href="estoque.html">Controle de Estoque</a></li>
             <li><a href="gestao_vendas.html">Gestão de Vendas</a></li>
             <li><a href="gestao_encomendas.html">Gestão Encomendas</a></li>
@@ -27,13 +27,14 @@
         <button class="menu-toggle" id="menuToggle">☰</button>
     
         <main class="content">
-            <form class="product-form">
+            
+            <form id="product_form" class="product_form">
                 
               <div class="row-form">
 
                 <div class="field">
                     <label>Nome:</label>
-                    <input type="text" placeholder="Informe o nome do produto..." />
+                    <input id="input_nome" type="text" placeholder="Informe o nome do produto..." />
                 </div>             
             
               </div>
@@ -42,7 +43,7 @@
 
                 <div class="field">
                     <label>Horas de impressão:</label>
-                    <input type="text" placeholder="Informe quantas horas de impressão..." />
+                    <input id="input_horas" type="text" placeholder="Informe quantas horas de impressão..." />
                 </div>             
             
               </div>
@@ -50,11 +51,11 @@
               <div class="row-form">
                 <div class="field">
                   <label>Nível complexidade:</label>
-                  <select>
+                  <select id="input_complexidade">
                     <option disabled selected>Selecione o nível de complexidade...</option>
-                    <option>Baixa</option>
-                    <option>Média</option>
-                    <option>Alta</option>
+                    <option value="1">Baixa</option>
+                    <option value="2">Média</option>
+                    <option value="3">Alta</option>
                   </select>
                 </div>
               </div>
@@ -62,11 +63,17 @@
               <div class="row-form">
                 <div class="field">
                   <label>Categoria:</label>
-                  <select>
+                  <select id="input_categ">
                     <option disabled selected>Selecione a categoria...</option>
                   </select>
                 </div>
               </div>
+                
+                <div class="row-form">                
+                  <label>Valor previsto: </label>
+                  <label id="exibe_preco">R$120,00</label>
+                  <button class="btn" id="btn_calcula_preco">Calcular preço</button>                
+                </div>
             
                 <div class="finalizar">
                   <button type="submit" class="btn finalizar-btn">Cadastrar Produto</button>
@@ -77,5 +84,6 @@
     
 
     <script src="../js/script_geral.js"></script>
+    <script src="../js/script_cadastra_produto.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     flex: 1;
   }
   
-  .product-form {
+  .product_form {
     display: flex;
     flex-direction: column;
     gap: 10px;

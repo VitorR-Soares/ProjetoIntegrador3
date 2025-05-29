@@ -35,11 +35,10 @@ public class ProdutoController {
         
     }
     
-    @PostMapping("/{id}")
-    public ResponseEntity<Produto> inserirProduto(@RequestBody Produto produto, 
-            @PathVariable("id") int idCategoria){
+    @PostMapping
+    public ResponseEntity<Produto> inserirProduto(@RequestBody Produto produto){
         
-        Produto produtoCadastrado = service.salvarProduto(produto, idCategoria);
+        Produto produtoCadastrado = service.salvarProduto(produto);
         
         return new ResponseEntity<>(produtoCadastrado, HttpStatus.OK);
         
