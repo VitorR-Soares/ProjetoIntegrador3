@@ -30,7 +30,7 @@ public class Encomenda {
     @Column(name= "date_data_realizacao")
     private LocalDate data;
     @Column(name= "date_data_entrega")
-    private LocalDate data_entrega;
+    private LocalDate dataEntrega;
     @Column(name= "s_status")
     private String status;
     @ManyToOne
@@ -52,7 +52,7 @@ public class Encomenda {
         this.valor_total = valor_total;
         this.valor_final = valor_final;
         this.data = data;
-        this.data_entrega = data_entrega;
+        this.dataEntrega = data_entrega;
         this.status = status;
         this.cliente = cliente;
         this.usuario = usuario;
@@ -64,7 +64,7 @@ public class Encomenda {
         this.valor_total = valor_total;
         this.valor_final = valor_final;
         this.data = data;
-        this.data_entrega = data_entrega;
+        this.dataEntrega = data_entrega;
         this.status = status;
         this.cliente = cliente;
         this.usuario = usuario;
@@ -112,11 +112,11 @@ public class Encomenda {
     }
 
     public LocalDate getData_entrega() {
-        return data_entrega;
+        return dataEntrega;
     }
 
     public void setData_entrega(LocalDate data_entrega) {
-        this.data_entrega = data_entrega;
+        this.dataEntrega = data_entrega;
     }
 
     public String getStatus() {

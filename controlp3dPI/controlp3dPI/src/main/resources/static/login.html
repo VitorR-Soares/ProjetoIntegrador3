@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Bem-vindo ao Sistema Controlp3D</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <section id="container_login">
-        <div id="container_img">
-            <img src="../src/imgs/logo.png" alt="Logotipo da empresa" class="img">
-        </div>
-        <div id="container_form">
-            
-        </div>
-
-    </section>
+    <div class="login-container">
+    <img src="../src/imgs/logo.png" alt="Logo ControlP3D" class="logo" />
+    <form id="form-login">
+      <input type="text" id="login" placeholder="Insira seu login..." required />
+      <input type="password" id="senha" placeholder="Insira sua senha..." required />
+      <button type="submit">Fazer login</button>
+    </form>
+  </div>
+    <script src="js/login.js"></script>
 </body>
 </html>

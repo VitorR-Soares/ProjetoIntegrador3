@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>controlp3dPI</name>
 	<description>Aplicação para gestão de ativos e controle de caixa para microempresa.</description>
+        <packaging>war</packaging>
 	<url/>
 	<licenses>
 		<license/>
@@ -60,6 +61,7 @@
 	</dependencies>
 
 	<build>
+            <finalName>${artifactId}</finalName> 
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

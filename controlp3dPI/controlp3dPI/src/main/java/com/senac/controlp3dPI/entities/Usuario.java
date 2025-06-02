@@ -21,7 +21,7 @@ public class Usuario {
     @Column(name= "id_usuario")
     private Integer id;
     @Column(name= "s_nome_usuario")
-    private String nome_usuario;
+    private String nomeUsuario;
     @Column(name= "s_senha")
     private String senha;
     @ManyToOne
@@ -33,13 +33,13 @@ public class Usuario {
 
     public Usuario(int id, String nome_usuario, String senha, Cargo cargo) {
         this.id = id;
-        this.nome_usuario = nome_usuario;
+        this.nomeUsuario = nome_usuario;
         this.senha = senha;
         this.cargo = cargo;
     }
 
     public Usuario(String nome_usuario, String senha, Cargo cargo) {
-        this.nome_usuario = nome_usuario;
+        this.nomeUsuario = nome_usuario;
         this.senha = senha;
         this.cargo = cargo;
     }
@@ -53,11 +53,11 @@ public class Usuario {
     }
 
     public String getNome_usuario() {
-        return nome_usuario;
+        return nomeUsuario;
     }
 
     public void setNome_usuario(String nome_usuario) {
-        this.nome_usuario = nome_usuario;
+        this.nomeUsuario = nome_usuario;
     }
 
     public String getSenha() {

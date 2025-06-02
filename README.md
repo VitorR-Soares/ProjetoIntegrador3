@@ -39,7 +39,6 @@ Esse é um projeto de gestão de estoque, vendas e encomendas de uma empresa que
 - Controle e Gestão de Estoque;
 - Cadastro e Gestão de Vendas;
 - Cadastro e Gestão de Encomendas;
-- Geração de Relatórios de Vendas e Controle de Caixa;
 
 ## Instalação
 

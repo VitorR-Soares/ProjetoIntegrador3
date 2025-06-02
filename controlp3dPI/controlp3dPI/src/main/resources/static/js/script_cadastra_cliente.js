@@ -1,4 +1,10 @@
-// ====================
+const usuarioLogado = sessionStorage.getItem("usuarioLogado");
+
+if (!usuarioLogado) {
+  window.location.href = "login.html"; // redireciona se não estiver logado
+}
+
+// // ====================
 // COLETA DE ELEMENTOS
 // ====================
 const formCliente = document.querySelector(".client-form");

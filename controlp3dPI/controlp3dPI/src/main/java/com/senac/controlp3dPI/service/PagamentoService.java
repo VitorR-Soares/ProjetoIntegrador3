@@ -26,4 +26,13 @@ public class PagamentoService {
         
     }
     
+    @Transactional 
+    public Pagamento pesquisaPorId(int id){
+        
+        Pagamento pagamentoEncontrado = repository.findById(id).get();
+        
+        return pagamentoEncontrado;
+        
+    }
+    
 }

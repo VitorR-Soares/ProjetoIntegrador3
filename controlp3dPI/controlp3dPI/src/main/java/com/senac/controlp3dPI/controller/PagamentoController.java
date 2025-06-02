@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,6 +28,15 @@ public class PagamentoController {
         List<Pagamento> pagamentos = service.listarPagamentos();
         
         return new ResponseEntity<>(pagamentos, HttpStatus.OK);
+        
+    }
+    
+    @GetMapping("/{id}")
+    public ResponseEntity<Pagamento> pesquisaProdutoPorID(@PathVariable("id") Integer id){
+        
+        Pagamento pagamento = service.pesquisaPorId(id);
+        
+        return new ResponseEntity<>(pagamento, HttpStatus.OK);
         
     }
     

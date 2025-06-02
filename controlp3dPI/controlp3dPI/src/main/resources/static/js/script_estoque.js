@@ -1,4 +1,10 @@
-  const tbody = document.querySelector(".product-table tbody");
+const usuarioLogado = sessionStorage.getItem("usuarioLogado");
+
+if (!usuarioLogado) {
+  window.location.href = "login.html"; // redireciona se não estiver logado
+}
+
+const tbody = document.querySelector(".product-table tbody");
   const btn_exibir_todos = document.getElementById("btn_exibir_todos");
   const select_categoria = document.querySelector('#form_pesquisa_categoria select');
   const form_pesquisa_nome = document.getElementById("form_pesquisa_nome");

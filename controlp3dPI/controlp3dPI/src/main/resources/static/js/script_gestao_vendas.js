@@ -1,3 +1,9 @@
+const usuarioLogado = sessionStorage.getItem("usuarioLogado");
+
+if (!usuarioLogado) {
+  window.location.href = "login.html"; // redireciona se não estiver logado
+}
+
 // ====== CAPTURA DOS ELEMENTOS DO DOM ======
 const inputData = document.getElementById("input_data");
 const tabelaVendas = document.querySelector("#tabela-vendas tbody");
