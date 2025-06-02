@@ -35,6 +35,15 @@ public class ProdutoController {
         
     }
     
+    @GetMapping("/{id}")
+    public ResponseEntity<Produto> pesquisaProdutoPorID(@PathVariable("id") Integer id){
+        
+        Produto produto = service.pesquisaPorId(id);
+        
+        return new ResponseEntity<>(produto, HttpStatus.OK);
+        
+    }
+    
     @PostMapping
     public ResponseEntity<Produto> inserirProduto(@RequestBody Produto produto){
         

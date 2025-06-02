@@ -29,12 +29,12 @@
         <main class="content">
             <div class="top-bar">   
                 <label for="input-date">Digite a data que deseja filtrar</label>             
-                <input type="date" class="input-text" />
+                <input id="input_data" type="date" class="input-text" />
                 <input type="submit" class="btn" title="Filtrar">
             </div>
           
             <div class="table-container">
-              <table class="sell-table">
+                <table id="tabela-vendas" class="sell-table">
                 <thead>
                   <tr>
                     <th>ID da venda</th>
@@ -53,7 +53,7 @@
             </div>
           
             <div class="bottom-buttons">
-              <button class="btn">Analisar Venda</button>
+                <button class="btn" id="btn_exibe_todos">Exibir todos</button>
               <a href="cadastro_venda.html" class="btn">Cadastrar Venda</a>
             </div>
         </main>
@@ -61,5 +61,6 @@
     
 
     <script src="../js/script_geral.js"></script>
+    <script src="../js/script_gestao_vendas.js"></script>
 </body>
 </html>

@@ -4,6 +4,8 @@
  */
 package com.senac.controlp3dPI.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -39,7 +41,8 @@ public class Venda {
     @JoinColumn(name="id_pagamento")
     private Pagamento pagamento;
     
-    @OneToMany(mappedBy = "venda")
+    @OneToMany(mappedBy = "venda", cascade = CascadeType.ALL)
+    @JsonIgnore
     private List<ProdutoVenda> produtoVendas;
 
     public Venda() {

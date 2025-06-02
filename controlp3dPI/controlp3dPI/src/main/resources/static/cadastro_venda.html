@@ -31,31 +31,31 @@
                 <div class="row-form">
                   <div class="field">
                     <label>Produto:</label>
-                    <select>
+                    <select id="input_produto">
                       <option disabled selected>Selecione o produto...</option>
                     </select>
                   </div>
             
                   <div class="field">
                     <label>Quantidade:</label>
-                    <input type="text" placeholder="Selecione a quantidade..." />
+                    <input id="input_qtd" type="text" placeholder="Selecione a quantidade..." />
                   </div>
                 </div>
             
                 <div class="row-form botoes-superiores">
-                  <button type="button" class="btn">Adicionar ao Carrinho</button>
-                  <button type="button" class="btn">Visualizar Carrinho</button>
+                    <button id="btn_add_carrinho" type="button" class="btn">Adicionar ao Carrinho</button>
+                  <button id="btn_visualiza_carrinho" type="button" class="btn">Visualizar Carrinho</button>
                 </div>
             
                 <div class="row-form">
                     <div class="field">
                         <label>Data:</label>
-                        <input type="date" />
+                        <input id="input_data" type="date" />
                     </div>                
                 
                     <div class="field">
                         <label>Cliente:</label>
-                        <select>
+                        <select id="input_cliente">
                         <option disabled selected>Selecione o cliente...</option>
                         </select>
                     </div>
@@ -64,7 +64,7 @@
                 <div class="row-form">
                   <div class="field">
                     <label>Usuário:</label>
-                    <select>
+                    <select id="input_usuario">
                       <option disabled selected>Selecione o usuário...</option>
                     </select>
                   </div>
@@ -73,7 +73,7 @@
                 <div class="row-form">
                   <div class="field">
                     <label>Forma de Pagamento:</label>
-                    <select>
+                    <select id="input_pagamento">
                       <option disabled selected>Selecione a forma de pagamento...</option>
                     </select>
                   </div>
@@ -82,7 +82,7 @@
                 <div class="row-form">
                   <div class="field desconto">
                     <label>Desconto (em %)</label>
-                    <input type="text" placeholder="%" />
+                    <input id="input_desconto" type="text" placeholder="%" />
                   </div>
                   <button type="button" class="btn aplicar-btn">Aplicar desconto</button>
                 </div>
@@ -96,7 +96,7 @@
                 </div>
             
                 <div class="finalizar">
-                  <button type="submit" class="btn finalizar-btn">Finalizar Venda</button>
+                    <button id="btn_finalizar_venda" type="submit" class="btn finalizar-btn">Finalizar Venda</button>
                 </div>
             </form>
         </main>
@@ -104,5 +104,6 @@
     
 
     <script src="../js/script_geral.js"></script>
+    <script src="../js/script_cadastro_venda.js"></script>
 </body>
 </html>

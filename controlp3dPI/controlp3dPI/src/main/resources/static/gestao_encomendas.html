@@ -28,13 +28,13 @@
     
         <main class="content">
             <div class="top-bar">   
-                <label for="input-date">Digite a data que deseja filtrar</label>             
-                <input type="date" class="input-text" />
+                <label for="input-data">Digite a data que deseja filtrar</label>             
+                <input id="input_data" type="date" class="input-text" />
                 <input type="submit" class="btn" title="Filtrar">
             </div>
           
             <div class="table-container">
-              <table class="order-table">
+              <table id="tabela_encomendas" class="order-table">
                 <thead>
                   <tr>
                     <th>ID da Encomenda</th>
@@ -54,7 +54,7 @@
             </div>
           
             <div class="bottom-buttons">
-              <button class="btn">Analisar Encomenda</button>
+              <button class="btn">Exibe Todas</button>
               <a href="cadastro_encomenda.html" class="btn">Cadastrar Encomenda</a>
             </div>
         </main>

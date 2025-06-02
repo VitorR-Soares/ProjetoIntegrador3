@@ -22,6 +22,15 @@ public class ProdutoService {
     CategoriaService categoriaService;
     
     @Transactional
+    public Produto pesquisaProdutoPorId(Integer id){
+        
+        Produto produto = repository.findById(id).get();
+        
+        return produto;
+        
+    }
+    
+    @Transactional
     public List<Produto> listarProdutos(){
         
         List<Produto> produtos = repository.findAll();

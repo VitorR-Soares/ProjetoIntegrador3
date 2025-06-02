@@ -29,16 +29,10 @@
         <main class="content">
             <form class="order-form">
                 <div class="row-form">
-                  <div class="field">
-                    <label>Produto:</label>
-                    <select>
-                      <option disabled selected>Selecione o produto...</option>
-                    </select>
-                  </div>
             
                   <div class="field">
-                    <label>Quantidade:</label>
-                    <input type="text" placeholder="Selecione a quantidade..." />
+                    <label>Descrição</label>
+                    <input id="input_descricao" type="text" placeholder="Selecione a quantidade..." />
                   </div>
                 </div>
             
@@ -50,11 +44,11 @@
                 <div class="row-form">
                     <div class="field">
                         <label>Data:</label>
-                        <input type="date" />
+                        <input id="input_data" type="date" />
                     </div>                
                     <div class="field">
                         <label>Data de Entrega:</label>
-                        <input type="date" />
+                        <input id="input_data_entrega" type="date" />
                     </div>  
                     
                 </div>
@@ -62,7 +56,7 @@
                 <div class="row-form">
                   <div class="field">
                     <label>Usuário:</label>
-                    <select>
+                    <select id="input_usuario">
                       <option disabled selected>Selecione o usuário...</option>
                     </select>
                   </div>
@@ -71,14 +65,14 @@
                 <div class="row-form">
                   <div class="field">
                     <label>Forma de Pagamento:</label>
-                    <select>
+                    <select id="input_pagamento">
                       <option disabled selected>Selecione a forma de pagamento...</option>
                     </select>
                   </div>
 
                   <div class="field">
                     <label>Cliente:</label>
-                    <select>
+                    <select id="input_cliente">
                     <option disabled selected>Selecione o cliente...</option>
                     </select>
                 </div>
@@ -87,7 +81,7 @@
                 <div class="row-form">
                   <div class="field desconto">
                     <label>Desconto (em %)</label>
-                    <input type="text" placeholder="%" />
+                    <input id="input_desconto" type="text" placeholder="%" />
                   </div>
                   <button type="button" class="btn aplicar-btn">Aplicar desconto</button>
                 </div>
